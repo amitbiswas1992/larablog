@@ -31,6 +31,10 @@ public function portfolio() {
     return $this->hasOne('App\Portfolio');
 
 }
+
+public function posts(){
+    return $this->hasMany(Post::class);
+}
                                      
 }
 

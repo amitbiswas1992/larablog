@@ -14,7 +14,7 @@ use App\User;
 |
 */
 
-Route::get('/', 'PostsController@index');
+Route::get('/', 'PostsController@index')->name('home');
 
 Route::get('/about',function(){
 $user_details=DB::table('users')->get();
@@ -46,4 +46,10 @@ Route::get('/sabbir','PortfolioController@getSabbir');
 Route::get('/post/{id}','PostsController@show');
 
 Route::post('/post/{id}/comments','CommentsController@store');
+
+Route::get('/register','RegistrationsController@create');
+
+Route::post('/register','RegistrationsController@store');
+
+Route::get('/login','SessionsController@create');
 

@@ -14,7 +14,7 @@
               <a class="nav-link" href="/post">New Posts</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="/about">About Me</a>
+               <a class="nav-link" href="/register">Login</a>
              </li>
             
           </ul>
