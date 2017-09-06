@@ -18,7 +18,7 @@ public function store()
    $this->validate(request(),[       //validating 
      'name'=>'required',
      'email'=>'required| email',
-     'password'=>'required'
+     'password'=>'required|confirmed'
 
 
    ]);

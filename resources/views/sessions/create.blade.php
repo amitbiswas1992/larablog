@@ -22,10 +22,19 @@
     <input type="password" class="form-control" id="password" name ="password" placeholder="password" required>
   </div>
 
+  <div class="form-group">
+    <label for="password_confirmation">Password</label>
+    <input type="password_confirmation" class="form-control" id="password_confirmation" name ="password_confirmation" placeholder="Retype password" required>
+  </div>
+
   <button type="submit" class="btn btn-outline-primary">Register</button>
+
+  @include('layouts.errors')
 </form>
 
-</div><br><br>
+</div>
+
+</div><br><b
 
 
-@endsection 
+@endsection

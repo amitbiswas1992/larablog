@@ -16,6 +16,11 @@
             <li class="nav-item">
                <a class="nav-link" href="/register">Login</a>
              </li>
+              <li class="nav-item">
+              @if(Auth::check())
+               <a class="nav-link ml-auto" href="#">{{ Auth::user()->name }}</a>
+               @endif
+             </li>
             
           </ul>
         </div>
